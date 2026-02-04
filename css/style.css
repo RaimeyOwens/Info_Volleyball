@@ -1,0 +1,25 @@
+body{
+    background-color: #DEDEDE;
+}
+h1{
+    font-family:Monaco; 
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(2, 23, 156);
+}
+.title_section{
+    background-color: #ceeff9;
+    text-align: center;
+}    
+.title_image{
+    border: 5px solid white;
+    border-radius: 10px;
+    border-style: groove;
+}
+.rules_section{
+    background-color: #DEDEDE;
+    text-align: center;
+}
+footer{
+    background-color: #ceeff9;
+    text-align: center;
+}
