@@ -6,6 +6,8 @@ h1{
     font-size: 50px;
     text-shadow: 2px 2px 5px rgb(2, 23, 156);
 }
+
+
 .title_section{
     background-color: #ceeff9;
     text-align: center;
@@ -15,11 +17,42 @@ h1{
     border-radius: 10px;
     border-style: groove;
 }
+
+
 .rules_section{
     background-color: #DEDEDE;
     text-align: center;
 }
 footer{
     background-color: #ceeff9;
+    text-align: center;
+}
+
+
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  margin: 100px;
+  border: 1px solid #5cdcff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+
+
+a:hover{
+    color: darkblue
+}
+.return-link{
+    font-size: 20px;
     text-align: center;
 }
