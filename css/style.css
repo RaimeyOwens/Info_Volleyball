@@ -48,9 +48,8 @@ footer{
 }
 
 
-
 a:hover{
-    color: darkblue
+    color: rgb(18, 18, 246)
 }
 .return-link{
     font-size: 20px;
@@ -59,28 +58,40 @@ a:hover{
 
 
 
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333333;
-}
-
-ul li {
-  float: left;
+  display: flex;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
 }
 
 ul li a {
   display: block;
   color: white;
-  text-align: center;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: #ffffff;
-  color: black;
+  background-color: #111111;
+  color: #ceeff9; 
+}
+
+#home_link {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
 }
