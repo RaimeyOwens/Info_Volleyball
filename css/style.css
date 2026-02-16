@@ -94,4 +94,28 @@ ul li a:hover {
   body {
     font-size: 16px;
   }
+  h1{
+    font-size: 30px; /* smaller header */
+    text-shadow: 1px 1px 3px rgb(2, 23, 156);
+  }
+
+  .title_section {
+    padding: 10px;
+  }
+
+  .title_image{
+    margin: 0 auto;
+    display: block;
+    border-width: 3px;
+  }
+
+    .flex-container {
+        flex-direction: column; 
+    }
+
+    .box {
+        margin: 20px;
+        padding: 20px;
+        width: 120px; 
+    }
 }
