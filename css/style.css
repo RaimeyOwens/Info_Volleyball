@@ -1,3 +1,7 @@
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 body{
     background-color: #DEDEDE;
     font: 20px Montserrat, sans-serif;
@@ -6,7 +10,7 @@ body{
 }
 h1{
     font-family:Monaco; 
-    font-size: 50px;
+    font-size: 80px;
     text-shadow: 2px 2px 5px rgb(2, 23, 156);
 }
 
@@ -14,11 +18,20 @@ h1{
 .title_section{
     background-color: #ceeff9;
     text-align: center;
-}    
+}
+
 .title_image{
     border: 5px solid white;
     border-radius: 10px;
     border-style: groove;
+}
+.img_circle{
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;   
+  border-radius: 50%;
 }
 
 
@@ -27,7 +40,7 @@ h1{
     text-align: center;
 }
 footer{
-    background-color: #ceeff9;
+    background-color: #DEDEDE;
     text-align: center;
 }
 
@@ -41,7 +54,7 @@ footer{
 }
 
 .box {
-  background-color: rgb(255, 255, 255);
+  /*background-color: rgb(255, 255, 255);*/
   padding: 100px;
   margin: 100px;
   border: 1px solid #5cdcff;
@@ -52,7 +65,7 @@ footer{
 
 
 a:hover{
-    color: rgb(18, 18, 246)
+    color: rgb(11, 11, 193)
 }
 .return-link{
     font-size: 20px;
@@ -65,7 +78,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
   display: flex;
   align-items: right;
   text-align: right;
@@ -93,6 +105,91 @@ ul li a:hover {
 }
 
 
+
+
+/* Style For Bootstrap Using Template From W3schools (Some was added to tags that already were in my style sheet)*/
+
+p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+
+  .bg-1 { 
+    background-color: #ceeff9; 
+    color: #000000;
+  }
+
+  .bg-2 { 
+    background-color: #DEDEDE;
+    color: #000000;
+  }
+
+  .bg-3 { 
+    background-color: #ceeff9; 
+    color: #000000;
+  }
+
+  .bg-4 { 
+    background-color: #DEDEDE; 
+    color: #000000;
+  }
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  
+ .navbar {
+  background-color: #010192 !important; /* deep blue */
+  border: 0;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+}
+
+.navbar-brand, 
+.navbar-nav li a {
+  color: #ffffff !important;
+}
+
+.navbar-nav li a:hover, 
+.navbar-nav li.active a {
+  background-color: #aaddff !important;
+  color: #000 !important;
+}
+
+.dropdown-menu > li > a {
+  color: #010192 !important;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #aaddff !important;
+  color: #000 !important;
+}
+
+.navbar-toggle {
+  border: 1px solid #fff;
+  background-color: #010192;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #dbdada;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: blue;
+  }
+  .carousel-indicators li {
+    border-color: blue;
+  }
+  .carousel-indicators li.active {
+    background-color: blue;
+  }
+
+
+
+/* Mobile view */
 @media (max-width: 600px) {
   body {
     font-size: 16px;
@@ -110,10 +207,14 @@ ul li a:hover {
     margin: 0 auto;
     display: block;
     border-width: 3px;
+
   }
 
     .flex-container {
         flex-direction: column; 
+        align-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .box {
@@ -122,39 +223,3 @@ ul li a:hover {
         width: 120px; 
     }
 }
-
-/* Style For Bootstrap Using Template From W3schools (Some was added to tags that already were in my style sheet)*/ 
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }

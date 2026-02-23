@@ -2,74 +2,149 @@
 <html>
 <head>
     <title>The Basics of Volleyball</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/6628b77f42.js" crossorigin="anonymous"></script>
+
+
     <!--Bootstrap Templete From W3schools-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
 </head>
 
 <!--Beginning of the webpage-->
-<body id="mainPage">
+<body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Fixed Navbar using w3schools code to help-->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+    <!-- Navbar Header -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Home</a>
+      <!-- Brand -->
+      <a class="navbar-brand" href="#mainPage">Volleyball Basics</a>
     </div>
+
+    <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Positions <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="outside.html">Outside</a></li>
+            <li><a href="middle.html">Middle</a></li>
+            <li><a href="rightsider.html">Rightside</a></li>
+            <li><a href="setter.html">Setter</a></li>
+            <li><a href="libero.html">Libero</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-
-<div class="title_section">
-    <h1>THE BASICS OF VOLLEYBALL</h1>
-    <h2>The guide to having a more in depth understanding of the sport</h2>
-    <p>This website will contain the basic information on volleyball. It will contain mainly the rules of the sport and the different positions that a player can play.</p>
-    <img src="images/volleyball_image1.jpeg" alt = "Volleyball Game Image" style="width:600px;height:300px;" class="title_image">  
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <div class="title_section">
+      <h1 class= "margin">THE BASICS OF VOLLEYBALL</h1>
+      <h2>The guide to having a more in depth understanding of the sport</h2>
+      <p>This website will contain the basic information on volleyball. It will contain mainly the rules of the sport and the different positions that a player can play.</p>
+      <img src="images/volleyball_image1.jpeg" alt="Volleyball Game Image" class="title_image img-responsive img_circle margin">
+  </div>
 </div>
-
 <hr>
 
-<div class="rules_section">
-    <h3>The rules of Volleyball</h3>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <div class="rules_section">
+    <h3 class="margin">The rules of Volleyball</h3>
     <p>Volleyball is a sport that is played by two teams of six players on a rectangular court divided by a net. The objective of the game is to send the ball over the net and to ground it on the opponent's side of the court, while preventing the same effort by the opponent. Each team is allowed a maximum of three touches to return the ball to the opponent's side. The team that wins a rally scores a point and serves the ball for the next rally. The first team to reach 25 points with at least a two-point lead wins the set, and matches (college) are typically played in a best-of-five format.</p>
-    <img src="images/volleyball_image2.jpeg" alt = "Volleyball Ball Image" style="width:600px;height:300px;">
     <p>The six players all have designated positions on the court. The positions are: Outside Hitter, Middle Blocker, Rightside Hitter, Setter, and Libero. Depending on the position they play they have to be in a certain sport on the court at certain times in order to fulfill their role.</p>
-    
+  </div>
 </div>
+
 <hr>
 
 <!--List that will eventually branch into different pages on the website-->
 <!--Future implications will make these buttons and show in a navbar-->
-<div class="position_section">
-    <h3>The main positions in Volleyball</h3>
-    <ol>
-        <li><a href="outside.html">Outside</a></li>
-        <li>Middle</li>
-        <li>Rightside</li>
-        <li>Setter</li>
-        <li>Libero</li>
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <div class="position_section">
+    <h3 class="margin">The Main Positions in Volleyball</h3><br>
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>Outside Hitter</h4>
+      </div>
+      <div class="item">
+        <h4>Middle Hitter/Blocker</h4>
+      </div>
+      <div class="item">
+        <h4>Right Side Hitter</h4>
+      </div>
+      <div class="item">
+        <h4>Setter</h4>
+      </div>
+      <div class="item">
+        <h4>Libero</h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>A global sport built on continus motion. Volleyball has one of the shortest reaction times in sports.</p>
+      <img src="images/volleyball_image4.jpeg" class="img-responsive margin" alt = "Attacker Action Shot" style="width:100%">
+    </div>
+    <div class="col-sm-4"> 
+      <p>A volleyball is built in layers. At its core is a rubber bladder. Around that are fabric layers that help the ball keep its shape, made from synthetic leather panels.</p>
+      <img src="images/volleyball_image2.jpeg" class="img-responsive margin" alt = "Volleyball Ball Image" style="width:100%">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Statistics are important in volleyball for tracking player performance and team success. One of the most important being hitting efficiency.</p>
+      <img src="images/volleyball_image3.jpeg" class="img-responsive margin" alt = "Attacker Action Shot" style="width:100%">
+    </div>
+  </div>
 </div>
 
+
 </body>
+
 <!--Footer-->
 <footer>
     <a href="#mainPage" title="To Top"><p>Back to the top</p></a>

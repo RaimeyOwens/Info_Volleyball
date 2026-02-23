@@ -11,7 +11,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body id="outsidePage">
+<body id="outsidePage" data-spy="scroll" data-target=".navbar" data-offset="60"></body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Navbar Header -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand" href="#mainPage">Volleyball Basics</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Positions <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="outside.html">Outside</a></li>
+            <li><a href="middle.html">Middle</a></li>
+            <li><a href="rightsider.html">Rightside</a></li>
+            <li><a href="setter.html">Setter</a></li>
+            <li><a href="libero.html">Libero</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
 <!--Beginning Information-->
 <div class="text-center">
 <h1 style="font-family:Monaco;">Outside Hitters</h1>
